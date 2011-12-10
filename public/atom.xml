@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[HTML5 Generative Art]]></title>
+  <link href="http://html5genart.github.com/atom.xml" rel="self"/>
+  <link href="http://html5genart.github.com/"/>
+  <updated>2011-12-09T19:07:35-05:00</updated>
+  <id>http://html5genart.github.com/</id>
+  <author>
+    <name><![CDATA[HTML5GenArt]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zombie Ninjas Attack: A survivor's retrospective]]></title>
+    <link href="http://html5genart.github.com/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective/"/>
+    <updated>2011-12-08T18:05:00-05:00</updated>
+    <id>http://html5genart.github.com/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective</id>
+    <content type="html"><![CDATA[<p>More stuff is here!</p>
+
+<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+
+<p><a href="http://html5genart.github.com/html5/generative-art/stream-js/index.html">Rose Stream </a></p>
+]]></content>
+  </entry>
+  
+</feed>
