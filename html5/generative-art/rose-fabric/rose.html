@@ -9,42 +9,7 @@
   <meta name="author" content="HTML5GenArt">
 
   
-  <meta name="description" content="Rose Fabric Dec 11th, 2011 (stream.js) download 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36 &hellip;">
+  <meta name="description" content="Rose Fabric Dec 11th, 2011 Processing and Processing.js noise() function is based on Perlin noise. You can play with NoiseScale to alter the waving &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -118,7 +83,9 @@
   <p><canvas id="canvas1" width="600" height="400"></canvas></p>
 
 
+<p>Processing and Processing.js <code>noise()</code> function is based on <a href="http://en.wikipedia.org/wiki/Perlin_noise">Perlin noise</a>. You can play with NoiseScale to alter the waving pattern (0.005 is an interesting value!).</p>
 
+<p>I&#8217;m also using a technique to bring a subset of the Processing API into the local scope of <code>sketchProc()</code> by calling <code>eval()</code> on <code>getLocalApi()</code>. (If this sounds too mysterious, check out <a href="/blog/2011/12/10/first-steps-with-processing-js/">First Steps with Processing</a>)</p>
 
 <figure class='code'><figcaption><span> (stream.js)</span> <a href='/html5/generative-art/rose-fabric/stream.js'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

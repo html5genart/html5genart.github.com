@@ -4,7 +4,7 @@
   <title><![CDATA[HTML5 Generative Art]]></title>
   <link href="http://html5genart.github.com/atom.xml" rel="self"/>
   <link href="http://html5genart.github.com/"/>
-  <updated>2011-12-12T11:59:03-05:00</updated>
+  <updated>2011-12-12T12:14:47-05:00</updated>
   <id>http://html5genart.github.com/</id>
   <author>
     <name><![CDATA[HTML5GenArt]]></name>
@@ -22,10 +22,6 @@
 
 <p><canvas id="canvas1" width="600" height="400"></canvas></p>
 
-
-<p>Comments: Not sure if this is a bug, but I have to modify the original PDE&#8217;s NoiseScale from 0.005 to 0.0005 to achieve similar visual effects as the PDE (Processing file). The NoiseScale is the factor used for the <a href="http://en.wikipedia.org/wiki/Perlin_noise">Perlin noise</a> function.</p>
-
-<p>I&#8217;m also using a technique to bring a subset of the Processing API into the local scope of <code>sketchProc()</code> by calling <code>eval()</code> on <code>getLocalApi()</code>. (If this sounds too mysterious, check out <a href="http://html5genart.github.com/blog/2011/12/10/first-steps-with-processing-js/">First Steps with Processing</a>)</p>
 
 <p>You can look at the source code in <a href="http://html5genart.github.com/html5/generative-art/rose-fabric/rose.html">here</a></p>
 
