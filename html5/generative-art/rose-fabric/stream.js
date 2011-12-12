@@ -1,15 +1,14 @@
-
 function sketchProc(processing) {
-    
-    var localFns = getLocalApi('processing'); eval(localFns); // Magic: private mixin
+	// Local import of Processing API subset to this scope.
+    var localFns = getLocalApi('processing'); eval(localFns);
 
     var width           = 600;
     var height          = 400;
-    var NoiseScale      = 0.0005;
+    var NoiseScale      = 0.0005;	// Different than the PDE!
     var NoiseOffsetX    = 0;
     var NoiseOffsetY    = 0;
 
-    var maxStreams  = 3000;			// At least 1000, no more than 5000
+    var maxStreams  = 3000;		// At least 1000, no more than 5000
     var streams     = 0;
 
     function setup() {
@@ -71,14 +70,14 @@ var p = new Processing(canvas, sketchProc);
 
 
 /*
- *  Bring a subset of the Processing API to the local scope of sketchProc()
+ *  Bring a subset of Processing API to the local scope of sketchProc()
  */
 function getLocalApi(processingVarName) {
     var api = ['size', 'background', 'fill', 'noStroke', 'noFill', 
                 'stroke', 'smooth', 'point', 'noise', 'map', 'exit'];
     
     var tmpl = 'var ${method} = function() ' +
-					'{ return ${ctx}.${method}.apply(${ctx}, arguments); }';
+				  '{ return ${ctx}.${method}.apply(${ctx}, arguments); }';
 
     var cmds = [];
     for (var i = 0; i < api.length; i++) {
