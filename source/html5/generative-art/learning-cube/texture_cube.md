@@ -10,12 +10,9 @@ footer: true
 <h2>Advanced processing.js via JavaScript</h2>
 <p>Processing.js Cube</p>
 
-**Note: runs via a web server or requres local files access in the web browser settings.**
+**Note: runs via a web server or requires local files access in the web browser settings.**
 
-Converted to the JavaScript language from the Processing code
-
-Original souce code:<a href="http://processing.org/learning/3d/texturecube.html">TexturedCube</a> 
-by Dave Bollinger.
+Converted to the JavaScript language from the Processing code. Original souce code:  [TexturedCube]("http://processing.org/learning/3d/texturecube.html") by Dave Bollinger.
 
 You can use the mouse to drag and rotate the textured cube.
 

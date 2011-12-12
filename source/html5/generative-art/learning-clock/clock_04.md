@@ -17,6 +17,8 @@ Clock
 
 {% include_code generative-art/learning-clock/clock_04.js %}
 
+Cheers!
+
 <script src="../processing-1.3.6-api.js"></script>
 <script type="text/javascript" src="clock_04.js"></script>
 
