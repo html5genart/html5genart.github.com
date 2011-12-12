@@ -4,7 +4,7 @@
   <title><![CDATA[HTML5 Generative Art]]></title>
   <link href="http://html5genart.github.com/atom.xml" rel="self"/>
   <link href="http://html5genart.github.com/"/>
-  <updated>2011-12-10T08:13:45-05:00</updated>
+  <updated>2011-12-11T19:55:30-05:00</updated>
   <id>http://html5genart.github.com/</id>
   <author>
     <name><![CDATA[HTML5GenArt]]></name>
@@ -14,15 +14,43 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Zombie Ninjas Attack: A survivor's retrospective]]></title>
-    <link href="http://html5genart.github.com/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective/"/>
-    <updated>2011-12-08T18:05:00-05:00</updated>
-    <id>http://html5genart.github.com/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective</id>
-    <content type="html"><![CDATA[<p>More stuff is here!</p>
+    <title type="html"><![CDATA[Rose Fabric]]></title>
+    <link href="http://html5genart.github.com/blog/2011/12/11/rose-fabric/"/>
+    <updated>2011-12-11T18:04:00-05:00</updated>
+    <id>http://html5genart.github.com/blog/2011/12/11/rose-fabric</id>
+    <content type="html"><![CDATA[<p>This is a modification of the first example in chapter four of <a href="http://www.glassner.com/andrew/writing/books/processing.htm"><strong>Processing for Visual Artists</strong></a> by <a href="http://www.glassner.com/">Andrew Glassner</a> which consists of an algorithm to simulate the texture of a fabric. I used a vivid pink color and changed the algorithm to be able to visualize the thread creation process one thread at a time.</p>
 
-<p><video width='640' height='320' preload='none' controls poster=' http://s3.imathis.com/video/zero-to-fancy-buttons.png'><source src='http://s3.imathis.com/video/zero-to-fancy-buttons.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/></video></p>
+<p><canvas id="canvas1" width="600" height="400"></canvas></p>
 
-<p><a href="http://html5genart.github.com/html5/generative-art/stream-js/index.html">Rose Stream </a></p>
+
+<p>Comments: Not sure if this is a bug, but I have to modify the original PDE&#8217;s NoiseScale from 0.005 to 0.0005 to achieve similar visual effects as the PDE (Processing file). The NoiseScale is the factor used for the [Perlin noise] (http://en.wikipedia.org/wiki/Perlin_noise) function.</p>
+
+<p>I&#8217;m also using a technique to bring a subset of the Processing API into the local scope of <code>sketchProc()</code> by calling <code>eval()</code> on <code>getLocalApi()</code>. (If this sounds too mysterious, check out <a href="http://html5genart.github.com/blog/2011/12/10/first-steps-with-processing-js/">First Steps with Processing</a>)</p>
+
+<p>File /Users/pedroha/Work/Blogging/octopress/source/html5/generative-art/rose-fabric/stream.js could not be found</p>
+
+<script src="http://html5genart.github.com/html5/js/processing-1.3.6-api.js"></script>
+
+
+<script src="http://html5genart.github.com/html5/generative-art/rose-fabric/stream.js"></script>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First steps with Processing.js]]></title>
+    <link href="http://html5genart.github.com/blog/2011/12/10/first-steps-with-processing-js/"/>
+    <updated>2011-12-10T18:13:00-05:00</updated>
+    <id>http://html5genart.github.com/blog/2011/12/10/first-steps-with-processing-js</id>
+    <content type="html"><![CDATA[<p>I started hacking with Processing.js using the <strong>not</strong> recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in the <a href="http://processingjs.org/learning/">Writing Processing code with JavaScript</a></p>
+
+<p>Moreover, I decided to make certain adjustments to make the Javascript code as readable as the Java-based Processing code (PDE file). In this exploration I came up with a hackish way to do a local import using <code>eval()</code> (which shouldn&#8217;t be used in general).</p>
+
+<p>Therefore, I came up with the following Javascript variations of [learning processing.js] (http://processingjs.org/learning/): <a href="http://html5genart.github.com/html5/generative-art/learning-clock/clock.html">Clock</a> and <a href="http://html5genart.github.com/html5/generative-art/learning-cube/texture_cube.html">Texture Cube</a></p>
+
+<p>Cheers!</p>
 ]]></content>
   </entry>
   

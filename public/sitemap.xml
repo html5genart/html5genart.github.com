@@ -1,30 +1,72 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://html5genart.github.com/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective/
-        </loc>
-        <lastmod>2011-12-09T19:21:33-05:00</lastmod>
+        <loc>http://html5genart.github.com/blog/2011/12/10/first-steps-with-processing-js/</loc>
+        <lastmod>2011-12-11T19:42:20-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://html5genart.github.com/blog/2011/12/11/rose-fabric/</loc>
+        <lastmod>2011-12-11T19:39:33-05:00</lastmod>
     </url>
     <url>
         <loc>http://html5genart.github.com/blog/archives/</loc>
-        <lastmod>2011-12-09T19:21:33-05:00</lastmod>
+        <lastmod>2011-12-11T19:42:20-05:00</lastmod>
     </url>
     <url>
-        <loc>http://html5genart.github.com/html5/generative-art/rose-stream/rose.html</loc>
-        <lastmod>2011-12-09T19:21:33-05:00</lastmod>
+        <loc>http://html5genart.github.com/html5/generative-art/learning-clock/clock.html</loc>
+        <lastmod>2011-12-11T19:50:37-05:00</lastmod>
     </url>
     <url>
-        <loc>http://html5genart.github.com/html5/generative-art/rose-stream/rose_test.html</loc>
-        <lastmod>2011-12-09T19:21:33-05:00</lastmod>
+        <loc>http://html5genart.github.com/html5/generative-art/learning-clock/clock_01.html</loc>
+        <lastmod>2011-12-11T17:33:48-05:00</lastmod>
     </url>
     <url>
-        <loc>http://html5genart.github.com/html5/markdown/</loc>
+        <loc>http://html5genart.github.com/html5/generative-art/learning-clock/clock_02.html</loc>
+        <lastmod>2011-12-11T17:33:53-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://html5genart.github.com/html5/generative-art/learning-clock/clock_03.html</loc>
+        <lastmod>2011-12-11T17:34:00-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://html5genart.github.com/html5/generative-art/learning-clock/clock_04.html</loc>
+        <lastmod>2011-12-11T17:34:05-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://html5genart.github.com/html5/generative-art/learning-cube/texture_cube.html
+        </loc>
+        <lastmod>2011-12-11T19:52:38-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://html5genart.github.com/html5/generative-art/learning-cube/texture_cube_01.html
+        </loc>
+        <lastmod>2011-12-11T17:34:12-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://html5genart.github.com/html5/generative-art/learning-cube/texture_cube_02.html
+        </loc>
+        <lastmod>2011-12-11T17:34:18-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://html5genart.github.com/html5/generative-art/learning-cube/texture_cube_03.html
+        </loc>
+        <lastmod>2011-12-11T17:34:22-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://html5genart.github.com/html5/generative-art/rose-fabric/rose.html</loc>
+        <lastmod>2011-12-11T19:53:30-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://html5genart.github.com/html5/markdown_syntax/</loc>
         <lastmod>2011-12-09T19:21:33-05:00</lastmod>
     </url>
     <url>
         <loc>http://html5genart.github.com/</loc>
-        <lastmod>2011-12-09T19:21:33-05:00</lastmod>
+        <lastmod>2011-12-11T19:42:20-05:00</lastmod>
     </url>
     <url>
         <loc>http://html5genart.github.com/super-awesome/</loc>

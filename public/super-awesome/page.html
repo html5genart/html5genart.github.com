@@ -9,7 +9,7 @@
   <meta name="author" content="HTML5GenArt">
 
   
-  <meta name="description" content=" Page Dec 8th, 2011 Dec 8th, 2011 Tweet Recent Posts Zombie Ninjas Attack: A survivor's retrospective ">
+  <meta name="description" content="Page Dec 8th, 2011 Dec 8th, 2011 Tweet Recent Posts Rose Fabric First steps with Processing.js Latest Tweets Status updating... $.domReady(function &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,7 +103,7 @@
       
         <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://html5genart.github.com/super-awesome/page.html" data-via="" data-counturl="http://html5genart.github.com/super-awesome/page.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://html5genart.github.com/super-awesome/page.html" data-via="html5genart" data-counturl="http://html5genart.github.com/super-awesome/page.html" >Tweet</a>
   
   
   
@@ -123,12 +123,32 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2011/12/08/zombie-ninjas-attack-a-survivors-retrospective/">Zombie Ninjas Attack: A survivor's retrospective</a>
+        <a href="/blog/2011/12/11/rose-fabric/">Rose Fabric</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/10/first-steps-with-processing-js/">First steps with Processing.js</a>
       </li>
     
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("html5genart", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/html5genart" class="twitter-follow-button" data-width="208px" data-show-count="false">Follow @html5genart</a>
+  
+</section>
 
 
 
