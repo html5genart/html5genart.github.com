@@ -11,7 +11,7 @@ footer: true
 
 {% include_code generative-art/rose-fabric/stream.js %}
 
-
+{% jsfiddle hYgZR %}
 
 <script src="../processing-1.3.6-api.js"></script>
 <script src="stream.js"></script>

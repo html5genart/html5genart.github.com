@@ -14,7 +14,7 @@ Comments: Not sure if this is a bug, but I have to modify the original PDE's Noi
 
 I'm also using a technique to bring a subset of the Processing API into the local scope of `sketchProc()` by calling `eval()` on `getLocalApi()`. (If this sounds too mysterious, check out [First Steps with Processing](/blog/2011/12/10/first-steps-with-processing-js/))
 
-{% include_code generative-art/rose-fabric/stream.js %}
+You can look at the source code in [here](/html5/generative-art/rose-fabric/rose.html)
 
 <script src="/html5/js/processing-1.3.6-api.js"></script>
 <script src="/html5/generative-art/rose-fabric/stream.js"></script>

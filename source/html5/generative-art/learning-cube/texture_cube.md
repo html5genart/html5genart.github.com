@@ -17,9 +17,8 @@ Converted to the JavaScript language from the Processing code. Original souce co
 You can use the mouse to drag and rotate the textured cube.
 
 <canvas id="canvas1" width="200" height="200"></canvas>
+    
 Xmas Tree, designed by [vector.net]("http://vector.net")
-
-TODO gist (but need a full URL for the tree image!)
 
 {% include_code generative-art/learning-cube/texture_cube_03.js %}
 
