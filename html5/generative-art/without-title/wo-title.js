@@ -1,5 +1,5 @@
+// TODO: It looks like the smooth() function is not called at all?
 var showJustPoints = false; // Set to true for debugging.
-// TODO: It looks like the smooth() function is not called at all? Rough.
 
 function int(v) { return Math.floor(v); };
 
@@ -25,14 +25,14 @@ function sketchProc(processing) {
     var initialized = false;
     
     var MAX_COUNTER = 1000;
-    var counter = 0; // reset every few
+    var counter = 0; // reset every MAX_COUNTER
 
     var colors = [
-        [ { r: 32, g: 127, b: 64}, 0],
-        [ { r: 127, g: 0, b: 127 }, 127]
+    	[{ r: 32, g: 127, b: 64}, 0],		/* Blue */
+    	[{ r: 127, g: 0, b: 127 }, 127]		/* Red */
     ];
-    var currentColor = 0;
-    
+    var currentColor = 1;
+
     function setup() {
         size(width, height);
         colorMode(p.RGB, num);
