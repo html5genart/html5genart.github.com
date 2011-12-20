@@ -4,7 +4,7 @@
   <title><![CDATA[HTML5 Generative Art]]></title>
   <link href="http://code.html5genart.com/atom.xml" rel="self"/>
   <link href="http://code.html5genart.com/"/>
-  <updated>2011-12-20T13:46:55-05:00</updated>
+  <updated>2011-12-20T18:34:58-05:00</updated>
   <id>http://code.html5genart.com/</id>
   <author>
     <name><![CDATA[HTML5GenArt]]></name>
@@ -69,7 +69,7 @@ And the code is not as readable as the Java/Processing counterpart which is more
     <link href="http://code.html5genart.com/blog/2011/12/10/first-steps-with-processing-js/"/>
     <updated>2011-12-10T18:13:00-05:00</updated>
     <id>http://code.html5genart.com/blog/2011/12/10/first-steps-with-processing-js</id>
-    <content type="html"><![CDATA[<p>I started hacking with Processing.js using the <strong>not</strong> recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in the <a href="http://processingjs.org/learning/">Writing Processing code with JavaScript</a></p>
+    <content type="html"><![CDATA[<p>I started hacking with Processing.js using the <strong>not</strong> recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in <a href="http://processingjs.org/learning/">Writing Processing code with JavaScript</a></p>
 
 <p>Moreover, I decided to make certain adjustments to make the Javascript code as readable as the Java-based Processing code (PDE file). In this exploration I came up with a hackish way to do a local import using <code>eval()</code> (which shouldn&#8217;t be used in general).</p>
 
