@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-I started hacking with Processing.js using the **not** recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in the [Writing Processing code with JavaScript](http://processingjs.org/learning/)
+I started hacking with Processing.js using the **not** recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in [Writing Processing code with JavaScript](http://processingjs.org/learning/)
 
 Moreover, I decided to make certain adjustments to make the Javascript code as readable as the Java-based Processing code (PDE file). In this exploration I came up with a hackish way to do a local import using `eval()` (which shouldn't be used in general).
 
