@@ -17,6 +17,5 @@ I'm also using a technique to bring a subset of the Processing API into the loca
 
 {% jsfiddle hYgZR %}
 
-<script src="../processing-1.3.6-api.js"></script>
 <script src="stream.js"></script>
 

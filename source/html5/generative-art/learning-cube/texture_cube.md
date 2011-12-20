@@ -23,6 +23,5 @@ Xmas Tree, designed by [vector.net]("http://vector.net")
 
 {% include_code generative-art/learning-cube/texture_cube_03.js %}
 
-<script src="../processing-1.3.6-api.js"></script>
 <script src="texture_cube_03.js"></script>
 

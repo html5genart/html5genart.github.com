@@ -12,6 +12,5 @@ This is a modification of the first example in chapter four of [**Processing for
 
 You can look at the source code in [here](/html5/generative-art/rose-fabric/rose.html)
 
-<script src="/html5/js/processing-1.3.6-api.js"></script>
 <script src="/html5/generative-art/rose-fabric/stream.js"></script>
 

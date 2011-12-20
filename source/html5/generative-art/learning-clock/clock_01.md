@@ -48,6 +48,5 @@ function drawArm(position, lengthScale, weight) {
 
 See next [Clock 2](clock_02.html)
 
-<script src="../processing-1.3.6-api.js"></script>
 <script type="text/javascript" src="clock_01.js"></script>
 

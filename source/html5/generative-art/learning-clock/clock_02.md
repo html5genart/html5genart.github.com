@@ -23,6 +23,5 @@ Trying to re-create the private local Processing API one by one function is not 
 
 See next [Clock 3](clock_03.html)
 
-<script src="../processing-1.3.6-api.js"></script>
 <script type="text/javascript" src="clock_02.js"></script>
 

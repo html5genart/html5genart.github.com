@@ -12,8 +12,8 @@ This is a Javascript port of Lia's [WithoutTitle](http://www.liaworks.com/thepro
 Although this is subjective, the visual quality didn't equal to the original.
 It's my impression that the `smooth()` function is not working as expected.
 
-The drawing performance in the Javascript version is very notorious. It feels very responsive.
-Personally, I find the slower Java/Processing version more pleasant and smoothing.
+The drawing performance in the Javascript version is notorious. It feels very responsive.
+Personally, I find the slower Java/Processing version more pleasant and relaxing.
 I don't like to slow things down but it may improve the experience in this case.
 
 You can click/move the mouse to interact with the drawing and press any key to pause.
@@ -24,7 +24,6 @@ And the code is not as readable as the Java/Processing counterpart which is more
 
 You can look at the source code in [here](/html5/generative-art/without-title/without-title.html)
 
-<script src="/html5/js/processing-1.3.6-api.js"></script>
 <script src="/html5/generative-art/without-title/wo-title.js"></script>
 
 

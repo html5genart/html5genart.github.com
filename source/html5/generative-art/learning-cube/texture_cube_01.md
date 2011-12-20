@@ -19,7 +19,6 @@ Xmas Tree, designed by <a href="http://vector.net">vector.net</a>
 
 <canvas id="canvas1" width="200" height="200"></canvas>
 
-<script src="../processing-1.3.6-api.js"></script>
 <script src="texture_cube_01.js"></script>
 
 {% include_code generative-art/learning-cube/texture_cube_01.js %}

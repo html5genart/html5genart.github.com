@@ -13,5 +13,4 @@ Move the mouse to change shapes and press any key to pause the drawing.
 
 {% include_code generative-art/without-title/wo-title.js %}
 
-<script src="../processing-1.3.6-api.js"></script>
 <script src="wo-title.js"></script>

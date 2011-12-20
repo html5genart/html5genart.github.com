@@ -19,5 +19,4 @@ Clock
 
 If you know Javascript and dare to know understand the idea behind `getLocalApi()`, you can check out [Clock 1](clock_01.html)
 
-<script src="../processing-1.3.6-api.js"></script>
 <script type="text/javascript" src="clock_04.js"></script>

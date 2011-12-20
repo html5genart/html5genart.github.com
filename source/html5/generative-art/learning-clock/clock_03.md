@@ -20,6 +20,5 @@ However, `function sketchProc()` looks more intimidating. How can we hide this c
 
 See next [Clock 4](clock_04.html)
 
-<script src="../processing-1.3.6-api.js"></script>
 <script type="text/javascript" src="clock_03.js"></script>
 
