@@ -13,8 +13,12 @@
         <lastmod>2011-12-20T13:46:18-05:00</lastmod>
     </url>
     <url>
+        <loc>http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps/</loc>
+        <lastmod>2011-12-27T18:48:14-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://code.html5genart.com/blog/archives/</loc>
-        <lastmod>2011-12-20T18:33:42-05:00</lastmod>
+        <lastmod>2011-12-27T18:48:14-05:00</lastmod>
     </url>
     <url>
         <loc>http://code.html5genart.com/html5/generative-art/learning-clock/clock.html</loc>
@@ -61,6 +65,12 @@
         <lastmod>2011-12-20T13:46:18-05:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://code.html5genart.com/html5/generative-art/quasicrystals/learning-quasicrystals.html
+        </loc>
+        <lastmod>2011-12-27T18:48:14-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://code.html5genart.com/html5/generative-art/rose-fabric/rose.html</loc>
         <lastmod>2011-12-20T13:46:18-05:00</lastmod>
     </url>
@@ -76,6 +86,6 @@
     </url>
     <url>
         <loc>http://code.html5genart.com/</loc>
-        <lastmod>2011-12-20T18:33:42-05:00</lastmod>
+        <lastmod>2011-12-27T18:48:14-05:00</lastmod>
     </url>
 </urlset>

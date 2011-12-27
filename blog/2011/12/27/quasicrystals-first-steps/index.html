@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - HTML5 Generative Art</title>
+  <title>Quasicrystals: First Steps - HTML5 Generative Art</title>
   <meta name="author" content="HTML5GenArt">
 
   
-  <meta name="description" content="Blog Archive 2011 Quasicrystals: First Steps
-Dec 27 2011 Without Title by Lia
-Dec 19 2011 Rose Fabric
-Dec 11 2011 First steps with Processing.js
-Dec &hellip;">
+  <meta name="description" content="This is a Javascript port of QUASI1.java by Michael Rule. I was playing with different values for K and switching between log-polar and cartesian &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ Dec &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://code.html5genart.com/blog/archives">
+  <link rel="canonical" href="http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script></a>
@@ -66,61 +62,97 @@ Dec &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Quasicrystals: First Steps</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-27T18:04:00-05:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>This is a Javascript port of <a href="http://wealoneonearth.blogspot.com/2011/10/animated-quasicrystals.html">QUASI1.java</a> by Michael Rule. I was playing with different values for K and switching between log-polar and cartesian coordinates. I settled down on K=3 and log-polar as the example for this post. I also cycled colors between blue and green.</p>
 
-  
-  <h2>2011</h2>
-
-<article>
-  
-<h1><a href="/blog/2011/12/27/quasicrystals-first-steps/">Quasicrystals: First Steps</a></h1>
-<time datetime="2011-12-27T18:04:00-05:00" pubdate><span class='month'>Dec</span> <span class='day'>27</span> <span class='year'>2011</span></time>
+<p><canvas id="canvas-polar" width="200" height="200"></canvas></p>
 
 
-</article>
+<script src="/html5/generative-art/quasicrystals/quasi1.js"></script>
 
 
+<p>The highlited source code can be found in <a href="/html5/generative-art/quasicrystals/learning-quasicrystals.html">here</a></p>
 
-<article>
-  
-<h1><a href="/blog/2011/12/19/without-title-by-lia/">Without Title by Lia</a></h1>
-<time datetime="2011-12-19T21:30:00-05:00" pubdate><span class='month'>Dec</span> <span class='day'>19</span> <span class='year'>2011</span></time>
+<p>The computations for the quasicrystals are very intensive and will consume a lot of CPU. Therefore, I had to reduce the size down to 200x200 pixels. I was surprised at the speed of the WebGL quasicrystal demos by <a href="http://www.jasondavies.com/animated-quasicrystals/">Jason Davies</a> and <a href="http://senchalabs.github.com/philogl/PhiloGL/examples/quasicrystal/">PhiloGL</a>. The use of WebGL shaders takes the onus from the CPUs to the <a href="http://gpucomputing.net/">GPUs</a>.</p>
 
+<p>In this particular Javascript port, I didn&#8217;t use Processing.js.
+Instead I used the <a href="http://paulirish.com/2011/requestanimationframe-for-smart-animating/">requestAnimationFrame shim</a>  by Paul Irish and HTML5 <a href="http://beej.us/blog/2010/02/html5s-canvas-part-ii-pixel-manipulation/">canvas pixel manipulation</a> as described by beej.</p>
 
-</article>
+<p><strong>Quasicrystal Resources</strong></p>
 
+<p><a href="http://wealoneonearth.blogspot.com/search/label/quasicrystal">http://wealoneonearth.blogspot.com/search/label/quasicrystal</a></p>
 
-
-<article>
-  
-<h1><a href="/blog/2011/12/11/rose-fabric/">Rose Fabric</a></h1>
-<time datetime="2011-12-11T18:04:00-05:00" pubdate><span class='month'>Dec</span> <span class='day'>11</span> <span class='year'>2011</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2011/12/10/first-steps-with-processing-js/">First steps with Processing.js</a></h1>
-<time datetime="2011-12-10T18:13:00-05:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2011</span></time>
-
-
-</article>
-
+<p><a href="http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html">http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html</a></p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">HTML5GenArt</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-27T18:04:00-05:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps/" data-via="" data-counturl="http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/19/without-title-by-lia/" title="Previous Post: Without Title by Lia">&laquo; Without Title by Lia</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
