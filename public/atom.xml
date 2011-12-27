@@ -4,7 +4,7 @@
   <title><![CDATA[HTML5 Generative Art]]></title>
   <link href="http://code.html5genart.com/atom.xml" rel="self"/>
   <link href="http://code.html5genart.com/"/>
-  <updated>2011-12-22T16:13:05-05:00</updated>
+  <updated>2011-12-27T18:45:57-05:00</updated>
   <id>http://code.html5genart.com/</id>
   <author>
     <name><![CDATA[HTML5GenArt]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Quasicrystals: First Steps]]></title>
+    <link href="http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps/"/>
+    <updated>2011-12-27T18:04:00-05:00</updated>
+    <id>http://code.html5genart.com/blog/2011/12/27/quasicrystals-first-steps</id>
+    <content type="html"><![CDATA[<p>This is a Javascript port of <a href="http://wealoneonearth.blogspot.com/2011/10/animated-quasicrystals.html">QUASI1.java</a> by Michael Rule. I was playing with different values for K and switching between log-polar and cartesian coordinates. I settled down on K=3 and log-polar as the example for this post. I also cycled colors between blue and green.</p>
+
+<p><canvas id="canvas-polar" width="200" height="200"></canvas></p>
+
+
+<script src="http://code.html5genart.com/html5/generative-art/quasicrystals/quasi1.js"></script>
+
+
+<p>The highlited source code can be found in <a href="http://code.html5genart.com/html5/generative-art/quasicrystals/learning-quasicrystals.html">here</a></p>
+
+<p>The computations for the quasicrystals are very intensive and will consume a lot of CPU. Therefore, I had to reduce the size down to 200x200 pixels. I was surprised at the speed of the WebGL quasicrystal demos by <a href="http://www.jasondavies.com/animated-quasicrystals/">Jason Davies</a> and <a href="http://senchalabs.github.com/philogl/PhiloGL/examples/quasicrystal/">PhiloGL</a>. The use of WebGL shaders takes the onus from the CPUs to the <a href="http://gpucomputing.net/">GPUs</a>.</p>
+
+<p>In this particular Javascript port, I didn&#8217;t use Processing.js.
+Instead I used the <a href="http://paulirish.com/2011/requestanimationframe-for-smart-animating/">requestAnimationFrame shim</a>  by Paul Irish and HTML5 <a href="http://beej.us/blog/2010/02/html5s-canvas-part-ii-pixel-manipulation/">canvas pixel manipulation</a> as described by beej.</p>
+
+<p><strong>Quasicrystal Resources</strong></p>
+
+<p><a href="http://wealoneonearth.blogspot.com/search/label/quasicrystal">http://wealoneonearth.blogspot.com/search/label/quasicrystal</a></p>
+
+<p><a href="http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html">http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Without Title by Lia]]></title>
