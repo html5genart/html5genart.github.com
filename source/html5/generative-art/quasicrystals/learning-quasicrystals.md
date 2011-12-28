@@ -9,7 +9,9 @@ categories:
 <p><canvas id="canvas-polar" width="200" height="200">
     No canvas support</canvas></p>
 
-``` html HTML source code
+If your browser can handle the performance, you may want to see [four variations](quasicrystal-4.html) (log-polar with K=3 and K=4 and cartesian with K=4 and K=7)
+
+``` html HTML source quasicrystal-4.htmlcode
 <p><canvas id="canvas-polar" width="200" height="200">
     No canvas support</canvas></p>
 <script type="text/javascript" src="quasi1.js"></script>
