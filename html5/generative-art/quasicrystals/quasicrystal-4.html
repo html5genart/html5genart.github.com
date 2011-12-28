@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Quasicrystals - Four variations</title>
+</head>
+<body>
+    <p>
+    <canvas id="canvas-polar" width="200" height="200">Canvas Not Supported!</canvas>
+    <canvas id="canvas-cartesian" width="200" height="200">Canvas Not Supported!</canvas>
+    </p>
+    <p>
+    <canvas id="canvas-cartesian-3" width="200" height="200">Canvas Not Supported!</canvas>
+    <canvas id="canvas-polar-3" width="200" height="200">Canvas Not Supported!</canvas>
+    </p>
+    
+    <script type="text/javascript">
+    
+    // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+    
+    // shim layer with setTimeout fallback
+
+    window.requestAnimFrame = (function(){
+      return  window.requestAnimationFrame       || 
+              window.webkitRequestAnimationFrame || 
+              window.mozRequestAnimationFrame    || 
+              window.oRequestAnimationFrame      || 
+              window.msRequestAnimationFrame     || 
+              function( callback ){
+                window.setTimeout(callback, 1000 / 60);
+              };
+    })();
+    
+    var width, height; width = height = 200;
+
+    var polarContext = document.getElementById('canvas-polar').getContext('2d');
+    var cartesianContext = document.getElementById('canvas-cartesian').getContext('2d');
+
+    var polarContext3 = document.getElementById('canvas-polar-3').getContext('2d');
+    var cartesianContext3 = document.getElementById('canvas-cartesian-3').getContext('2d');
+    
+    var stop = false;
+    
+    function animate() {
+        if (!stop) {
+            requestAnimFrame( animate );
+            draw(polarContext3, true, width, height, 3);
+            draw(cartesianContext3, false, width, height, 7);
+            draw(polarContext, true, width, height, 4);
+            draw(cartesianContext, false, width, height, 4);
+        }
+        else {
+            // alert("Stopping");
+        }
+    }
+
+    function setPixel(imageData, x, y, r, g, b, a) {
+        var index = (x + y * imageData.width) * 4;
+        imageData.data[index+0] = r;
+        imageData.data[index+1] = g;
+        imageData.data[index+2] = b;
+        imageData.data[index+3] = a;
+    }
+
+    var PI = Math.PI;
+    var abs = Math.abs;
+    var sin = Math.sin;
+    var cos = Math.cos;
+    var atan2 = Math.atan2;
+    var log = Math.log;
+    var sqrt = Math.sqrt;    
+    var int = function(v) { return Math.floor(v); };
+    
+    var phase = 0;
+    var count = 0;
+    
+    var forward = true;
+    var b = 0; // blue
+    
+    function draw(context, polar, width, height, k) {
+        // create a new pixel array
+        var imageData = context.createImageData(width, height);
+        
+        var stripes = 14;
+        var N = width;
+        var N2 = N/2;
+        
+        for (var i = 0; i < N; i++) {
+            for (var j = 0; j < N; j++) {
+                var x = j - N2;
+                var y = i - N2;
+                
+                if (polar) {
+                    var theta = atan2(y, x);
+                    var d = sqrt(x*x + y*y);
+                    var r = log(d);
+
+                    var C = 0;
+                    for (var t = 0; t < PI; t += PI/k) {
+                        C += cos( (theta*cos(t)-r*sin(t)) * stripes+phase);  
+                    }
+                }
+                else {  // Cartesian crystals
+                    var C = 0;
+                    for (var t = 0; t < PI; t += PI/k) {
+                        C += cos(abs(x*cos(t)+y*sin(t))*2*PI*stripes/N-phase); // +phase: contract
+                    }
+                }
+                var g = int( (C+k) / (k*2) * 255 );                
+                var blue = (polar) ? 127+g-b : g+b;
+                setPixel(imageData, j, i, 32+g, 64+g, blue, 0xff); // light blue
+            }
+        }
+
+        // copy the image data back onto the canvas
+        context.putImageData(imageData, 0, 0); // at coords 0,0
+        
+        phase += 2*PI / 30;
+        count++;
+        
+        if (phase > 2*PI) {
+            phase = 0;
+
+            b += (forward? 1 : -1) * 16;
+            if (b < 0) { forward = true; }
+            if (b > 120) { forward = false; }
+        }
+    }
+    
+    // Surprisingly "slow!" -> but PhiloGL was very fast!
+
+    animate();    
+
+    </script>
+</body>
+</html>
