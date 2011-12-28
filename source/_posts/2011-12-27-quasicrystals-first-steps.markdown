@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quasicrystals: First Steps"
+title: "First Steps with Quasicrystals"
 date: 2011-12-27 18:04
 comments: true
 categories: 
