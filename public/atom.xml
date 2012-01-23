@@ -4,14 +4,163 @@
   <title><![CDATA[HTML5 Generative Art]]></title>
   <link href="http://code.html5genart.com/atom.xml" rel="self"/>
   <link href="http://code.html5genart.com/"/>
-  <updated>2011-12-28T17:33:55-05:00</updated>
+  <updated>2012-01-22T20:34:04-05:00</updated>
   <id>http://code.html5genart.com/</id>
   <author>
-    <name><![CDATA[HTML5GenArt]]></name>
+    <name><![CDATA[Pedro Ha]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Black Waters]]></title>
+    <link href="http://code.html5genart.com/blog/2012/01/22/black-waters/"/>
+    <updated>2012-01-22T20:05:00-05:00</updated>
+    <id>http://code.html5genart.com/blog/2012/01/22/black-waters</id>
+    <content type="html"><![CDATA[<p>Based on Jason Davie&#8217;s <a href="http://www.jasondavies.com/animated-quasicrystals/">Quasicrystals</a></p>
+
+<div><canvas id="bwcanvas" width="500" height="500"></canvas></div>
+
+
+<p><strong> Modifications in the fragment shader code </strong></p>
+
+<p>From</p>
+
+<figure class='code'><figcaption><span>HTML source</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>vec2 defpixel = (pixel - vec2(.5)) * 170.; // 170 -&gt; 20
+</span><span class='line'>
+</span><span class='line'>vec4 color = vec4(ans * .53, ans * .33, ans * .65, 1.);
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To</p>
+
+<figure class='code'><figcaption><span>HTML source</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>vec2 defpixel = (pixel - vec2(.5)) * 20.; // 170 -&gt; 20
+</span><span class='line'>
+</span><span class='line'>vec4 color = vec4( 0.3*ans, ans, ans, 1.0 ); // black water color
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<script id="shader-vs" type="x-shader/x-vertex"> 
+  attribute vec3 position;
+  attribute vec2 texCoord1;
+  
+  uniform mat4 worldMatrix;
+  uniform mat4 projectionMatrix;
+  
+  varying   vec2 pixel;
+  void main(void) {
+     gl_Position = projectionMatrix * worldMatrix * vec4(position, 1.);
+     pixel = texCoord1;
+  }
+</script>
+
+
+
+
+<script id="shader-fs" type="x-shader/x-fragment"> 
+  #ifdef GL_ES
+  precision highp float;
+  #endif
+
+  #define PI 3.1415926535
+
+  uniform sampler2D sampler1;
+  uniform float t;
+
+  varying vec2 pixel;
+  uniform vec2 mouse;
+
+  void main(void) {
+    const float step = PI / 7.0;
+    float angle = 0.;
+    float s;
+    float c;
+    float ans;
+
+    vec2 defpixel = (pixel - vec2(.5)) * 20.;
+
+    for (int i = 0; i < 7; i++) {
+      s = sin(angle);
+      c = cos(angle);
+      ans += (cos( c * defpixel.x + s * defpixel.y + t) + 1.) / 2.;
+      angle += step;
+    }
+
+    ans = mod(floor(ans), 2.0) == 0. ? fract(ans) : 1. - fract(ans);
+    //vec4 color = vec4(ans * .53, ans * .33, ans * .65, 1.);
+    vec4 color = vec4( 0.3*ans, ans, ans, 1.0 ); // black waters
+    color.w = 1.;
+
+    gl_FragColor = color;
+  }
+</script>
+
+
+
+
+<script src="http://code.html5genart.com/html5/js/PhiloGL.cls.js"></script>
+
+
+
+
+<script>
+
+var w = 500,
+    h = 500,
+    canvas = document.getElementById('c');
+
+PhiloGL.unpack();
+
+if (!PhiloGL.hasWebGL()) {
+  alert("WebGL is not supported in this browser");
+}
+else {
+  var programId = "black-waters";
+  
+  PhiloGL("bwcanvas", {
+    program: [{
+      id: programId,
+      from: "ids",
+      vs: "shader-vs",
+      fs: "shader-fs"
+    }],
+    onError: function(e) {
+      console.log(e);
+    },
+    onLoad: function(app) {
+      time = Date.now();
+
+      draw();
+
+      function draw() {
+        t = ((Date.now() - time) / 300) % (2 * Math.PI);
+
+        Media.Image.postProcess({
+          width: w,
+          height: h,
+          toScreen: true,
+          program: programId,
+          uniforms: {t: t}
+        });
+
+        Fx.requestAnimationFrame(draw);
+      }
+    }
+  });
+}
+</script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[First Steps with Quasicrystals]]></title>

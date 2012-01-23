@@ -5,7 +5,7 @@
 url: http://code.html5genart.com
 title: HTML5 Generative Art
 subtitle: Random Art - Bit by Bit
-author: HTML5GenArt
+author: Pedro Ha
 simple_search: http://google.com/search
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -92,7 +92,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-28337140-1
 
 # Facebook Like
 facebook_like: false
