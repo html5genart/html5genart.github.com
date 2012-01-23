@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>HTML5 Generative Art</title>
+  <title>Black Waters - HTML5 Generative Art</title>
   <meta name="author" content="Pedro Ha">
 
   
@@ -21,7 +21,7 @@ vec2 defpixel = (pixel - vec2(.5)) * 170 &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://code.html5genart.com">
+  <link rel="canonical" href="http://code.html5genart.com/blog/2012/01/22/black-waters">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script></a>
@@ -76,15 +76,12 @@ vec2 defpixel = (pixel - vec2(.5)) * 170 &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/01/22/black-waters/">Black Waters</a></h1>
+      <h1 class="entry-title">Black Waters</h1>
     
     
       <p class="meta">
@@ -107,7 +104,7 @@ vec2 defpixel = (pixel - vec2(.5)) * 170 &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>Based on Jason Davie&#8217;s <a href="http://www.jasondavies.com/animated-quasicrystals/">Quasicrystals</a></p>
+<div class="entry-content"><p>Based on Jason Davie&#8217;s <a href="http://www.jasondavies.com/animated-quasicrystals/">Quasicrystals</a></p>
 
 <div><canvas id="bwcanvas" width="500" height="500"></canvas></div>
 
@@ -249,77 +246,16 @@ else {
 </script>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/27/quasicrystals-first-steps/">First Steps With Quasicrystals</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Pedro Ha</span></span>
 
-<time datetime="2011-12-27T18:04:00-05:00" pubdate data-updated="true">Dec 27<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is a Javascript port of <a href="http://wealoneonearth.blogspot.com/2011/10/animated-quasicrystals.html">QUASI1.java</a> by Michael Rule. I was playing with different values for K and switching between log-polar and cartesian coordinates. I settled down on K=3 and log-polar as the example for this post. I also cycled colors between blue and green.</p>
-
-<p><canvas id="canvas-polar" width="200" height="200"></canvas></p>
-
-
-<script src="/html5/generative-art/quasicrystals/quasi1.js"></script>
-
-
-<p>The highlited source code can be found in <a href="/html5/generative-art/quasicrystals/learning-quasicrystals.html">here</a></p>
-
-<p>The computations for the quasicrystals are very intensive and will consume a lot of CPU. Therefore, I had to reduce the size down to 200x200 pixels. I was surprised at the speed of the WebGL quasicrystal demos by <a href="http://www.jasondavies.com/animated-quasicrystals/">Jason Davies</a> and <a href="http://senchalabs.github.com/philogl/PhiloGL/examples/quasicrystal/">PhiloGL</a>. The use of WebGL shaders takes the onus from the CPUs to the <a href="http://gpucomputing.net/">GPUs</a>.</p>
-
-<p>In this particular Javascript port, I didn&#8217;t use Processing.js.
-Instead I used the <a href="http://paulirish.com/2011/requestanimationframe-for-smart-animating/">requestAnimationFrame shim</a>  by Paul Irish and HTML5 <a href="http://beej.us/blog/2010/02/html5s-canvas-part-ii-pixel-manipulation/">canvas pixel manipulation</a> as described by beej.</p>
-
-<p><strong>Quasicrystal Resources</strong></p>
-
-<p><a href="http://wealoneonearth.blogspot.com/search/label/quasicrystal">http://wealoneonearth.blogspot.com/search/label/quasicrystal</a></p>
-
-<p><a href="http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html">http://mainisusuallyafunction.blogspot.com/2011/10/quasicrystals-as-sums-of-waves-in-plane.html</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/19/without-title-by-lia/">Without Title by Lia</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -331,138 +267,32 @@ Instead I used the <a href="http://paulirish.com/2011/requestanimationframe-for-
   
 
 
-<time datetime="2011-12-19T21:30:00-05:00" pubdate data-updated="true">Dec 19<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is a Javascript port of Lia&#8217;s <a href="http://www.liaworks.com/theprojects/withouttitle/">WithoutTitle</a>. The original can be seen in her <a href="http://liaworks.com/projects/withouttitle/">Java applet</a>. You should check some of Lia&#8217;s really
-<a href="http://www.liaworks.com/category/theprojects/">amazing projects</a>.</p>
-
-<p>Although this is subjective, the visual quality didn&#8217;t equal to the original.
-It&#8217;s my impression that the <code>smooth()</code> function is not working as expected.</p>
-
-<p>The drawing performance in the Javascript version is notorious. It feels very responsive.
-Personally, I find the slower Java/Processing version more pleasant and relaxing.
-I don&#8217;t like to slow things down but it may improve the experience in this case.</p>
-
-<p>You can click/move the mouse to interact with the drawing and press any key to pause.</p>
-
-<p><canvas id="canvas-without-title" width="600" height="600"></canvas></p>
-
-
-<p>Due to the way Javascript code works, there&#8217;s quite a bit of noise because of &#8216;this&#8217;.
-And the code is not as readable as the Java/Processing counterpart which is more succinct.</p>
-
-<p>You can look at the source code in <a href="/html5/generative-art/without-title/without-title.html">here</a></p>
-
-<script src="/html5/generative-art/without-title/wo-title.js"></script>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-01-22T20:05:00-05:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2012</time>
       
-  <header>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2011/12/11/rose-fabric/">Rose Fabric</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+      <div class="sharing">
   
-
-
-<time datetime="2011-12-11T18:04:00-05:00" pubdate data-updated="true">Dec 11<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is a modification of the first example in chapter four of <a href="http://www.glassner.com/andrew/writing/books/processing.htm"><strong>Processing for Visual Artists</strong></a> by <a href="http://www.glassner.com/">Andrew Glassner</a> which consists of an algorithm to simulate the texture of a fabric. I used a vivid pink color and changed the algorithm to be able to visualize the thread creation process one thread at a time.</p>
-
-<p><canvas id="canvas1" width="600" height="400"></canvas></p>
-
-
-<p>You can look at the source code in <a href="/html5/generative-art/rose-fabric/rose.html">here</a></p>
-
-<script src="/html5/generative-art/rose-fabric/stream.js"></script>
-
-
-
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://code.html5genart.com/blog/2012/01/22/black-waters/" data-via="" data-counturl="http://code.html5genart.com/blog/2012/01/22/black-waters/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/10/first-steps-with-processing-js/">First Steps With Processing.js</a></h1>
-    
-    
-      <p class="meta">
-        
+        <a class="basic-alignment left" href="/blog/2011/12/27/quasicrystals-first-steps/" title="Previous Post: First Steps with Quasicrystals">&laquo; First Steps with Quasicrystals</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-10T18:13:00-05:00" pubdate data-updated="true">Dec 10<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I started hacking with Processing.js using the <strong>not</strong> recommended way, which is to use the Javascript method and skip the creation of a PDE file, as described in <a href="http://processingjs.org/learning/">Writing Processing code with JavaScript</a></p>
-
-<p>Moreover, I decided to make certain adjustments to make the Javascript code as readable as the Java-based Processing code (PDE file). In this exploration I came up with a hackish way to do a local import using <code>eval()</code> (which shouldn&#8217;t be used in general).</p>
-
-<p>Therefore, I came up with the following Javascript variations of <a href="http://processingjs.org/learning/">learning processing.js</a>: <a href="/html5/generative-art/learning-clock/clock.html">Clock</a> and <a href="/html5/generative-art/learning-cube/texture_cube.html">Texture Cube</a></p>
-
-<p>Cheers!</p>
 </div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -499,6 +329,7 @@ And the code is not as readable as the Java/Processing counterpart which is more
 
   
 </aside>
+
 
     </div>
   </div>
